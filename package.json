@@ -1,0 +1,16 @@
+{
+  "name": "react-native-rncrypto",
+  "version": "0.0.1",
+  "description": "",
+  "nativePackage": true,
+  "author": "",
+  "license": "ISC",
+  "main": "index.js",
+  "keywords": [
+    "react-native",
+    "android"
+  ],
+  "dependencies": {
+    "buffer": "^4.6.0"
+  }
+}

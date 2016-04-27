@@ -1,0 +1,31 @@
+apply plugin: 'android-library'
+
+android {
+    compileSdkVersion 23
+    buildToolsVersion '23.0.3'
+
+    defaultConfig {
+        minSdkVersion 16
+        targetSdkVersion 22
+        versionCode 1
+        versionName "1.0"
+
+        ndk {
+          moduleName "rncrypto"
+          cFlags "-frtti -fexceptions -I" + projectDir.absolutePath + "/src/main/jni"
+          ldLibs "cryptopp " +
+            "-L" + projectDir.absolutePath + "/src/main/jniLibs/armeabi-v7a " +
+            "-L" + projectDir.absolutePath + "/src/main/jniLibs/x86 " +
+            ""
+          stl "gnustl_static"
+          abiFilters "armeabi-v7a", "x86"
+        }
+    }
+    lintOptions {
+        abortOnError false
+    }
+}
+
+dependencies {
+    compile 'com.facebook.react:react-native:0.20.+'
+}
