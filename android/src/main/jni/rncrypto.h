@@ -15,6 +15,30 @@ extern "C" {
 JNIEXPORT jbyteArray JNICALL Java_cn_jedisto_rncrypto_RNCryptoJni_randomBytes
   (JNIEnv *, jclass, jint);
 
+/*
+ * Class:     cn_jedisto_rncrypto_RNCryptoJni
+ * Method:    eccGenerateKeys
+ * Signature: ()[[B
+ */
+JNIEXPORT jobjectArray JNICALL Java_cn_jedisto_rncrypto_RNCryptoJni_eccGenerateKeys
+  (JNIEnv *, jclass);
+
+/*
+ * Class:     cn_jedisto_rncrypto_RNCryptoJni
+ * Method:    eccEncrypt
+ * Signature: ([B[B)[B
+ */
+JNIEXPORT jbyteArray JNICALL Java_cn_jedisto_rncrypto_RNCryptoJni_eccEncrypt
+  (JNIEnv *, jclass, jbyteArray, jbyteArray);
+
+/*
+ * Class:     cn_jedisto_rncrypto_RNCryptoJni
+ * Method:    eccDecrypt
+ * Signature: ([B[B)[B
+ */
+JNIEXPORT jbyteArray JNICALL Java_cn_jedisto_rncrypto_RNCryptoJni_eccDecrypt
+  (JNIEnv *, jclass, jbyteArray, jbyteArray);
+
 #ifdef __cplusplus
 }
 #endif
