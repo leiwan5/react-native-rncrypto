@@ -62,7 +62,7 @@ rncrypto.randomBytes(32).then(function(random) {
   // console.log(random.toString('hex'));
   // console.log(random.toString('base64'));
 });
-const plain = new Buffer('Hello, world!', 'utf-8');
+var plain = new Buffer('Hello, world!', 'utf-8');
 rncrypto.ecc.generateKeys().then(function(keys) {
   rncrypto.ecc.encrypt(plain, keys.publicKey).then(function(cipher) {
     // console.log(cipher.toString('hex'));
@@ -71,8 +71,6 @@ rncrypto.ecc.generateKeys().then(function(keys) {
     });
   });
 });
-const cipher = yield rncrypto.ecc.encrypt(plain, keys.publicKey);
-const decrypted = yield rncrypto.ecc.decrypt(cipher, keys.privateKey);
 ```
 
 or
