@@ -443,7 +443,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "cd ${PROJECT_DIR}/cryptopp-ios/lib\n./7z x libcryptopp.a.7z";
+			shellScript = "cd ${PROJECT_DIR}/cryptopp-ios/lib\n[ -f ./libcryptopp.a ] || ./7z x libcryptopp.a.7z";
 		};
 /* End PBXShellScriptBuildPhase section */
 
