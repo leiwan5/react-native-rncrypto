@@ -386,6 +386,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 6A5685ED1CCC625D00F95941 /* Build configuration list for PBXNativeTarget "rncrypto" */;
 			buildPhases = (
+				6AFEDE351CD44FB8007ACC47 /* ShellScript */,
 				6A5685E01CCC625D00F95941 /* Sources */,
 				6A5685E11CCC625D00F95941 /* Frameworks */,
 				6A5685E21CCC625D00F95941 /* CopyFiles */,
@@ -429,6 +430,22 @@
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		6AFEDE351CD44FB8007ACC47 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "cd ${PROJECT_DIR}/cryptopp-ios/lib\n./7z x libcryptopp.a.7z";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		6A5685E01CCC625D00F95941 /* Sources */ = {
