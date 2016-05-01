@@ -4,6 +4,7 @@
   "description": "",
   "nativePackage": true,
   "author": "",
+  "homepage": "https://github.com/danielking/react-native-rncrypto",
   "license": "ISC",
   "main": "index.js",
   "keywords": [
