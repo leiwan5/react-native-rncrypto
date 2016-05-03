@@ -21,6 +21,8 @@ npm i -S react-native-rncrypto
 rnpm link react-native-rncrypto
 ```
 
+note: please rename main.m to main.mm or change compiler to clang++ in xcode before compiling with xcode.
+
 ### import
 
 ```javascript
